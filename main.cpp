@@ -120,7 +120,7 @@ int main()
 			if (answer[k] == 'e') // проверяем конец блока
 			{
 				fwrite(answer, 1, k, ofile); // записываем полученное колличество символов в блоке
-				for (int i = 0; i < 7; i++) // обнуляем
+				for (int i = 0; i < 18; i++) // обнуляем
 					answer[i] = 0;
 				k = 0;
 				count++; // переходим к следующему блоку
@@ -134,7 +134,7 @@ int main()
 				if (block_numer != count) // проверяем не пропущен ли какой-то блок
 					while (block_numer != count && count <= n)
 					{
-						cout << counter << " блока нет" << endl;
+						cout << count << " блока нет" << endl;
 						count++;
 					}
 				answer[k] = 0;// обнуляем данную переменную, так как в конечном выводе её не должно быть
